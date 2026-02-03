@@ -1,0 +1,4 @@
+#!/bin/bash
+# zmmp structure reading benchmark
+# Requires: zmmp binary built with ReleaseFast
+exec "${ZMMP_BIN:-zmmp}" --quiet "$1"

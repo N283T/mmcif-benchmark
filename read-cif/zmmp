@@ -1,0 +1,4 @@
+#!/bin/bash
+# zmmp CIF parsing benchmark
+# Requires: zmmp binary built with ReleaseFast
+exec "${ZMMP_BIN:-zmmp}" --cif-only "$1"

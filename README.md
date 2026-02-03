@@ -43,6 +43,7 @@ so I compare apples to oranges, but it gives you some idea what to expect.
 The scripts used here are in the ``read-cif`` subdirectory.
 They either call commands:
 
+* `zmmp` - [zmmp](https://github.com/N283T/zmmp) (Zig mmCIF Parser) with `--cif-only` flag
 * `gemmi-validate` - parses and copies all the data into a DOM structure
 * `gemmi-validate-fast` - parses a file w/o copying any data
 * `cif_api` - runs `cif2_syncheck` from cif_api, as in a benchmark in
@@ -107,8 +108,8 @@ and interpreting their content as a structural model,
 which usually involves building a model-chain-residue-atom hierarchy.
 
 The scripts that are run are in the ``read-model`` subdirectory.
-They all happen to be Python scripts:
 
+* `zmmp` - [zmmp](https://github.com/N283T/zmmp) (Zig mmCIF Parser) with `--quiet` flag
 * `gemmi-structure` - calls `gemmi.read_structure()` from Python.
   Internally, it first copies all the data into DOM structure, and then
   creates a hierarchy copying the data again.
